@@ -1,0 +1,30 @@
+// Workflow Model
+digraph {
+	rankdir=LR size="10,4"
+	A [label="Data Collection
+
+• Physiological
+• Behavioral
+• Emotional"]
+	B [label="Feature Extraction
+
+• Variance
+• Entropy
+• Cyclic Patterns"]
+	C [label="Mood Variability Index (MVI)
+
+• Intensity
+• Frequency"]
+	D [label="Explainable AI
+
+• Feature Attribution
+• Attention Mapping"]
+	E [label="Intervention Engine
+
+• Risk Classification
+• Alerts & Recommendations"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}

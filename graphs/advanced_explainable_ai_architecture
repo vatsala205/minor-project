@@ -1,0 +1,46 @@
+// Explainable AI Architecture
+digraph {
+	rankdir=TB size="8,10"
+	subgraph cluster_data {
+		label="Data Layer"
+		A [label="User Input
+(Survey + Behavioral Data)"]
+	}
+	subgraph cluster_feature {
+		label="Feature Layer"
+		B [label="Feature Extraction
+• Sleep
+• Stress
+• Activity"]
+	}
+	subgraph cluster_ml {
+		label="ML Layer"
+		C1 [label="Random Forest"]
+		C2 [label="BERT Model"]
+	}
+	subgraph cluster_explain {
+		label="Explainability Layer"
+		D [label="Explanation Engine
+• Feature Importance
+• Attention Scores"]
+	}
+	subgraph cluster_rag {
+		label="Knowledge Layer (RAG)"
+		E1 [label="Vector Database"]
+		E2 [label="Knowledge Graph"]
+	}
+	subgraph cluster_output {
+		label="Output Layer"
+		F [label="Human Explanation
+“High stress due to poor sleep”"]
+	}
+	A -> B
+	B -> C1
+	B -> C2
+	C1 -> D
+	C2 -> D
+	D -> E1
+	D -> E2
+	E1 -> F
+	E2 -> F
+}

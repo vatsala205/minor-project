@@ -1,0 +1,30 @@
+// Explainable AI Mechanism
+digraph {
+	A [label="User Input
+(Survey + Behavioral Data)"]
+	B [label="Feature Extraction
+
+• Sleep
+• Stress
+• Activity"]
+	C [label="ML Models
+
+• Random Forest
+• BERT"]
+	D [label="Explanation Layer
+
+• Feature Importance (RF)
+• Attention Scores (BERT)"]
+	E [label="RAG Engine
+
+• Vector DB
+• Knowledge Graph"]
+	F [label="Human Explanation
+
+“High stress due to poor sleep”"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}

@@ -1,0 +1,45 @@
+// Mood Drift Detection Framework
+digraph {
+	A [label="Multimodal Input
+
+• Sleep Data
+• Behavioral Data
+• Emotional Signals"]
+	B [label="Feature Extraction
+
+• Temporal Features
+• Variance
+• Entropy
+• Cyclic Patterns"]
+	C [label="Mood Drift Modeling
+
+• Baseline Comparison
+• Deviation Detection
+• Trend Analysis"]
+	D [label="Mood Variability Index (MVI)
+
+• Stability Score
+• Fluctuation Rate
+• Risk Indicator"]
+	E [label="Explainable AI Layer
+
+• Feature Importance
+• Temporal Attention
+• Interpretability"]
+	F [label="Risk Classification
+
+• Low
+• Medium
+• High"]
+	G [label="Early Intervention Engine
+
+• Alerts
+• Recommendations
+• Monitoring"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+}

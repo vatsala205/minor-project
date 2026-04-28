@@ -1,0 +1,16 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+openpyxl
+
+torch
+transformers
+sentence-transformers
+faiss-cpu
+
+streamlit
+
+networkx
+imbalanced-learn
